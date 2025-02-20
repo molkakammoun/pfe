@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"> <!-- Si tu as un fichier CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur la page de session</h1>
+        <p>Nombre de visites : {{ app.request.getSession().get('nbreVisite') }}</p>
+    </div>
+</body>
+</html>
